@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Buda:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="criarItem">Lista:</label>
+                <input type="text" name="list" id="criarItem" placeholder="Escreva algo">
+            </div>
+            <button type="button" id="btn" disabled>Habilitar</button>
+
+            <section>
+                <h2>Coisas para fazer</h2>
+                <ul id="lista">
+                </ul>
+            </section>
+        </form>
+        <footer>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
+
+
+<!-- VERSÃO CORRIGIDA PELO ChatGPT -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Buda:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <main>
+        <section>  SEMÂNTICA: section ao invés de form, pois você não envia nada 
+            <div>
+                <label for="criarItem">Lista:</label>
+                <input type="text" id="criarItem" placeholder="Escreva algo">
+            </div>
+
+            <button type="button" id="btn" disabled>Adicionar</button>
+
+            <article>  SEMÂNTICA: lista dentro de um article 
+                <h2>Coisas para fazer</h2>
+                <ul id="lista"></ul>
+            </article>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    Script movido para o final do body 
+    <script src="script.js"></script>
+</body>
+
+</html>
+ -->
+
+
+

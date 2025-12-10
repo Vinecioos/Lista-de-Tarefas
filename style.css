@@ -1,0 +1,250 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Buda", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+main {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(233, 82, 107);
+    background: linear-gradient(to top right, #ED8558, #CF58ED);
+}
+
+#btn {
+    margin: 10px;
+    width: fit-content;
+    padding: 4px;
+    border: 3px solid green;
+    background-color: rgb(115, 230, 115);
+    transition: transform .5s;
+
+}
+
+#btn:hover {
+    background-color: #A66161;
+    border: 2px solid #9829A6;
+    color: #A52A2A;
+    transform: scale(1.2);
+    transition: ease 1s;
+
+}
+
+
+input {
+    border: 3px solid red;
+    background-color: #e58484;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.erro {
+    border: 3px solid red;
+    background-color: #e58484;
+}
+
+.erro::placeholder {
+    color: black;
+
+}
+
+.valido {
+    border: 3px solid green;
+    background-color: rgb(115, 230, 115);
+}
+
+
+#btn:disabled {
+    border: 3px solid red;
+    background-color: #e58484;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    font-size: large;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.tarefaConcluida {
+    text-decoration: line-through;
+    font-size: large;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+
+.concluir {
+    background: none;      /* Remove fundo */
+    border: none;         /* Remove borda */
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 5px;
+    transition: transform .5s;
+}
+
+.concluir::before {
+    content: "✅";
+}
+
+.concluir:hover {
+   transform: scale(1.2);
+}
+
+.apagar {
+    background: none;      /* Remove fundo */
+    border: none;         /* Remove borda */
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 5px;
+    transition: transform .5s;
+}
+
+.apagar::before {
+    content: "❌";
+}
+
+.apagar:hover {
+   transform: scale(1.2);
+}
+
+
+/* VERSÃO CORRIGIDA PELO ChatGPT */
+
+
+/* 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Buda", serif;
+}
+
+====== CONTAINER ====== 
+
+section {
+    border: 3px solid rgb(233, 82, 107);
+    padding: 20px;
+    background: linear-gradient(to top right, #ED8558, #CF58ED);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ ====== INPUT ====== 
+
+input {
+    border: 3px solid red;
+    background-color: #e58484;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.erro {
+    border: 3px solid red;
+    background-color: #e58484;
+}
+
+.valido {
+    border: 3px solid green;
+    background-color: rgb(115, 230, 115);
+}
+
+ ====== BOTÃO ====== 
+
+#btn {
+    width: fit-content;
+    padding: 6px 12px;
+    border: 3px solid green;
+    background-color: rgb(115, 230, 115);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btn:hover:enabled {
+    transform: scale(1.1);
+    background-color: #A66161;
+    border-color: #9829A6;
+}
+
+#btn:disabled {
+    background-color: #e58484;
+    border-color: red;
+}
+
+====== LISTA ====== 
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarefaConcluida {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+ ====== BOTÕES DE AÇÃO ====== 
+
+.concluir,
+.apagar {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.concluir::before {
+    content: "✅";
+}
+
+.apagar::before {
+    content: "❌";
+}
+
+.concluir:hover,
+.apagar:hover {
+    transform: scale(1.3);
+}
+*/
