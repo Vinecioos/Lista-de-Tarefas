@@ -7,6 +7,8 @@ body {
     font-family: "Buda", serif;
     font-weight: 300;
     font-style: normal;
+    background: #0b0b0f;
+    color: white;
 }
 
 
@@ -17,8 +19,12 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    border: 3px solid rgb(233, 82, 107);
-    background: linear-gradient(to top right, #ED8558, #CF58ED);
+    position: relative;
+    padding: 30px;
+    background: #313131;
+    border-radius: 12px;
+    z-index: 1;
+    overflow: hidden;
 }
 
 #btn {
@@ -78,17 +84,17 @@ ul {
 
 li {
     font-size: large;
-    color: #000000;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
     list-style-type: none;
+    color: white;
 }
 
 .tarefaConcluida {
     text-decoration: line-through;
     font-size: large;
-    color: #000000;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     list-style-type: none;
@@ -104,6 +110,7 @@ li {
     cursor: pointer;
     padding-left: 5px;
     transition: transform .5s;
+    
 }
 
 .concluir::before {
@@ -132,6 +139,60 @@ li {
 .apagar:hover {
    transform: scale(1.2);
 }
+
+form::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 14px;
+
+    background: conic-gradient(
+        #00ffff,
+        #00ffff 10%,
+        transparent 20%,
+        #7C4DFF 30%,
+        #7C4DFF 40%,
+        transparent 50%,
+        #00ffff 60%,
+        #00ffff 70%,
+        transparent 80%,
+        #7C4DFF 90%,
+        #7C4DFF
+    );
+
+    animation: girar 4s linear infinite;
+    filter: blur(0.6px);
+    z-index: -1;
+}
+
+
+form::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background: #0b0b0f;
+    z-index: -1;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+form:hover::before {
+    filter: drop-shadow(0 0 12px #00ffff)
+            drop-shadow(0 0 25px #7C4DFF);
+}
+
+
+
 
 
 /* VERSÃO CORRIGIDA PELO ChatGPT */
